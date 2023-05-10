@@ -1,0 +1,30 @@
+.desk__right {
+  width: 40%;
+}
+.desk__right .desk__title {
+  width: 70%;
+  color: var(--title-color);
+  margin-bottom: 40px;
+}
+.desk__right .desk__text {
+  width: 70%;
+}
+.desk__right .desk__text:first-of-type {
+  margin-bottom: calc(var(--text-size) * 1.7);
+}
+
+@media screen and (max-width: 450px) {
+  .desk__right {
+    width: 100%;
+  }
+  .desk__right .desk__title {
+    font-weight: 700;
+    width: 100%;
+  }
+  .desk__right .desk__text {
+    width: 100%;
+  }
+  .desk__right .desk__text:nth-of-type(2) {
+    display: none;
+  }
+}/*# sourceMappingURL=desk__right.css.map */

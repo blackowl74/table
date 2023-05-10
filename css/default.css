@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf") format("opentype");
+  font-weight: 700;
+}
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: var(--title-size);
+  line-height: var(--title-size);
+  font-weight: 300;
+}
+
+p {
+  font-size: var(--text-size);
+  line-height: calc(var(--text-size) * 1.7);
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: calc(var(--title-size) * 0.7);
+    line-height: calc(var(--title-size) * 0.7);
+  }
+  p {
+    font-size: calc(var(--text-size) * 0.7);
+    line-height: calc(var(--text-size) * 1.7 * 0.7);
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: calc(var(--title-size) * 0.6);
+    line-height: calc(var(--title-size) * 0.6);
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+  }
+}/*# sourceMappingURL=default.css.map */

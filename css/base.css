@@ -1,0 +1,17 @@
+@import url(desk__left/desk__left.css);
+@import url(desk__right/desk__right.css);
+.desk {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  .desk {
+    padding: 10px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,125 @@
+.desk__left
+    position: relative
+    width: 60%
+    max-height: 100vh
+
+    .desk__toggler
+        height: 0
+        visibility: hidden
+
+    .desk__up-btn
+        &:checked ~ .desk__container .desk__top-img
+            transform: translateY(-9%)
+            transition: 3s linear
+    .desk__down-btn
+        &:checked ~ .desk__container .desk__top-img
+            transform: translateY(5%)
+            transition: 3s linear
+    
+    
+    .desk__container
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        overflow: hidden
+       
+
+        .desk__img
+            width: 110%
+            position: absolute
+            left: -5%
+            transition: 2s linear
+        .desk__top-img
+            z-index: 1
+        
+        .desk__buttons
+            position: absolute
+            bottom: 50%
+            left: 50%
+            z-index: 10
+            transform: translate(-50%, 110%)
+            display: flex
+            justify-content: space-between
+            .desk__lbl
+                width: var(--btn-size)
+                height: var(--btn-size)
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 40px
+                line-height: 40px
+                color: var(--lbl-color)
+                background: var(--btn-color)
+                margin: 0 25px
+                user-select: none
+
+.desk__text-mobile
+    display: none
+
+@media screen and (max-width: 1400px) 
+
+    .desk__left
+
+        .desk__container
+
+            
+            .desk__buttons
+                transform: translate(-50%, 90%)
+                .desk__lbl
+                    width: 120px 
+                    height: 120px
+                    font-size: 2rem
+
+@media screen and (max-width: 450px) 
+
+    .desk__left
+        width: 100%
+        min-height: 50vh 
+        height: 60vh
+
+
+        .desk__container
+
+            .desk__img
+                width: 120%
+                left: -10%
+
+            .desk__buttons
+                transform: translate(-50%, 100%)
+
+                .desk__lbl
+                    width: var(--mobile-btn-size)
+                    height: var(--mobile-btn-size)
+                    font-size: 1rem
+                    margin: 0 5px
+
+    .desk__text-mobile
+        display: block
+        margin-top: 30px
+
+@media screen and (max-width: 350px) 
+    .desk__left
+        width: 100%
+        min-height: 50vh 
+        height: 60vh
+
+
+        .desk__container
+
+            .desk__img
+                width: 120%
+                left: -10%
+
+            .desk__buttons
+                transform: translate(-50%, 40%)
+
+                .desk__lbl
+                    width: var(--mobile-btn-size)
+                    height: var(--mobile-btn-size)
+                    font-size: 1rem
+                    margin: 0 5px
+    
